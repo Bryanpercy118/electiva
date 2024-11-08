@@ -11,7 +11,7 @@
       </button>
   
       <!-- Menú de navegación -->
-      <div :class="{'block': isMenuOpen, 'hidden': !isMenuOpen}" class="w-full md:flex md:w-auto md:space-x-4 hidden">
+      <div :class="isMenuOpen ? 'block w-full mt-2' : 'hidden' " class="md:flex md:w-auto md:space-x-4">
         <router-link class="block md:inline-block text-lg font-semibold px-2 py-1 rounded hover:bg-white hover:bg-opacity-20" to="/">Inicio</router-link>
         <router-link class="block md:inline-block text-lg font-semibold px-2 py-1 rounded hover:bg-white hover:bg-opacity-20" to="/alcance">Alcance</router-link>
         <router-link class="block md:inline-block text-lg font-semibold px-2 py-1 rounded hover:bg-white hover:bg-opacity-20" to="/propuesta">Propuesta</router-link>
