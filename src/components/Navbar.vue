@@ -18,12 +18,12 @@
         :class="isMenuOpen ? 'translate-x-0' : '-translate-x-full'"
         class="fixed top-0 left-0 h-full w-3/4 bg-gradient-to-b from-blue-500 to-blue-600 p-6 space-y-4 transform transition-transform duration-300 md:relative md:translate-x-0 md:flex md:space-y-0 md:space-x-4 md:bg-transparent md:w-auto md:p-0"
       >
-        <router-link @click="closeMenu" class="nav-link" to="/">Inicio</router-link>
-        <router-link @click="closeMenu" class="nav-link" to="/alcance">Alcance</router-link>
-        <router-link @click="closeMenu" class="nav-link" to="/propuesta">Propuesta</router-link>
-        <router-link @click="closeMenu" class="nav-link" to="/taller">Taller</router-link>
-        <router-link @click="closeMenu" class="nav-link" to="/tecnologia">Tecnología</router-link>
-        <router-link @click="closeMenu" class="nav-link" to="/curricular">Curricular</router-link>
+        <router-link @click="closeMenu" class="block md:inline-block text-lg font-semibold px-2 py-1 rounded hover:bg-white hover:bg-opacity-20" to="/">Inicio</router-link>
+        <router-link @click="closeMenu" class="block md:inline-block text-lg font-semibold px-2 py-1 rounded hover:bg-white hover:bg-opacity-20" to="/alcance">Alcance</router-link>
+        <router-link @click="closeMenu" class="block md:inline-block text-lg font-semibold px-2 py-1 rounded hover:bg-white hover:bg-opacity-20" to="/propuesta">Propuesta</router-link>
+        <router-link @click="closeMenu" class="block md:inline-block text-lg font-semibold px-2 py-1 rounded hover:bg-white hover:bg-opacity-20" to="/taller">Taller</router-link>
+        <router-link @click="closeMenu" class="block md:inline-block text-lg font-semibold px-2 py-1 rounded hover:bg-white hover:bg-opacity-20" to="/tecnologia">Tecnología</router-link>
+        <router-link @click="closeMenu" class="block md:inline-block text-lg font-semibold px-2 py-1 rounded hover:bg-white hover:bg-opacity-20" to="/curricular">Curricular</router-link>
       </div>
     </nav>
   </template>
@@ -48,16 +48,23 @@
   </script>
   
   <style scoped>
-  /* Clase común para los enlaces del menú */
-  .nav-link {
-    @apply block md:inline-block text-lg font-semibold px-2 py-1 rounded;
-    background: linear-gradient(to right, #3b82f6, #2563eb); /* Fondo degradado azul */
-    transition: background-color 0.3s ease;
+  nav a {
+    transition: background-color 0.3s;
   }
   
-  /* Eliminar cambio de color en hover para mantener la consistencia visual */
-  .nav-link:hover {
-    background: linear-gradient(to right, #3b82f6, #2563eb); /* Mantener el mismo fondo */
+  /* Efecto de deslizamiento para el menú en móviles */
+  .transform {
+    transition: transform 0.3s ease;
+  }
+  
+  /* Fondo completo y espaciado en el menú móvil */
+  .fixed {
+    z-index: 40; /* Para que aparezca encima del contenido */
+  }
+  
+  /* Espaciado adicional para el menú en pantallas pequeñas */
+  .md\:hidden {
+    z-index: 50; /* Para que el botón de cierre esté encima del fondo */
   }
   </style>
   
