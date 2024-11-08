@@ -1,9 +1,7 @@
 <template>
     <div class="min-h-screen flex flex-col">
-      <header class="bg-blue-800 text-white p-4">
-        <h1 class="text-2xl font-bold">Electiva</h1>
-      </header>
       <main class="flex-grow">
+        <Navbar />
         <router-view />
       </main>
       <footer class="bg-blue-800 text-white p-4 text-center">
@@ -13,8 +11,13 @@
   </template>
   
   <script>
+  import Navbar from '../components/Navbar.vue';
+
   export default {
     name: "DefaultLayout",
+    components: {
+      Navbar
+    }
   };
   </script>
   

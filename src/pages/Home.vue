@@ -1,57 +1,63 @@
 <template>
-    <div class="bg-gradient-to-b from-blue-100 to-blue-200 py-12 px-6">
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl font-bold text-blue-900 mb-8 text-center">
-          MOVIÉNDONOS HACIA UN FUTURO SALUDABLE: TECNOLOGÍA Y ACTIVIDAD FÍSICA EN EDUCACIÓN
-        </h1>
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-blue-800 mb-4">Alcance y Necesidad</h2>
-          <p class="text-gray-700 leading-relaxed">
-            Es notorio que en la actualidad los niños tienen una inactividad física propiciada
-            inicialmente por el uso desmedido de dispositivos electrónicos. Esta falta de
-            inactividad no solo afecta su salud física, sino cognitiva, lo cual tiene sus
-            repercusiones. La necesidad de abordar esta problemática radica en promover hábitos
-            saludables desde una edad temprana, fundamental para el desarrollo integral de los niños.
-          </p>
-        </section>
+    <div class="bg-gradient-to-b from-yellow-100 to-green-200 min-h-screen">
+      <!-- Sección con Imagen de Fondo y Título Principal -->
+      <div class="relative h-96 w-full">
+        <div
+          class="absolute inset-0 bg-cover bg-center opacity-70"
+          style="background-image: url('https://images.pexels.com/photos/8613305/pexels-photo-8613305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');"
+        ></div>
   
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-blue-800 mb-4">Propuesta</h2>
-          <p class="text-gray-700 leading-relaxed">
-            Consiste en crear un enfoque innovador que busque combinar la actividad física con el uso
-            moderado de la tecnología. Esto incluirá la creación de páginas interactivas que enseñen y
-            pregunten a los niños sobre coordinación y movimiento, cambiando la educación física en
-            algo más divertido y educativo.
+        <!-- Contenido Centrado con Texto Principal -->
+        <div class="relative max-w-5xl mx-auto text-center py-12">
+          <h1 class="text-5xl font-extrabold text-green-700 mb-4 animate-fade-in">
+            MOVIÉNDONOS HACIA UN FUTURO SALUDABLE
+          </h1>
+          <p class="text-lg text-green-800 animate-fade-in-slow">
+            Tecnología y Actividad Física en Educación
           </p>
-        </section>
+        </div>
+      </div>
   
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-blue-800 mb-4">Taller Dinámico</h2>
-          <p class="text-gray-700 leading-relaxed">
-            Fomentar la actividad física y la coordinación motora a través de juegos.
-          </p>
-          <ul class="list-disc pl-6 text-gray-700 leading-relaxed">
-            <li><strong>Duración:</strong> 1 hora</li>
-            <li><strong>Actividades:</strong> Calentamiento interactivo, juego de coordinación, cierre reflexivo.</li>
-          </ul>
-        </section>
+      <!-- Sección de Videos Interactivos -->
+      <div class="max-w-5xl mx-auto mt-8 px-4">
+        <h2 class="text-3xl font-semibold text-blue-800 text-center mb-8">Videos de Apoyo</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Tarjetas de Video -->
+          <div v-for="(video, index) in videos" :key="index" class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <!-- Condición para diferenciar video local o video de YouTube -->
+            <div v-if="video.isLocal">
+              <video :src="video.url" class="w-full h-48" controls></video>
+            </div>
+            <div v-else>
+              <iframe
+                :src="video.url"
+                class="w-full h-48"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-green-700">{{ video.title }}</h3>
+              <p class="text-gray-600 text-sm mt-1">{{ video.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
   
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-blue-800 mb-4">Apoyo Tecnológico</h2>
-          <p class="text-gray-700 leading-relaxed">
-            Creación de páginas que incorporen juegos de coordinación y ejercicios.
-          </p>
-        </section>
-  
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold text-blue-800 mb-4">Propuesta Curricular</h2>
-          <p class="text-gray-700 leading-relaxed">
-            La idea es la incorporación de la tecnología en el currículo de educación física,
-            creando una unidad adicional que contenga: objetivos relacionados con la actividad física,
-            tecnología significativa para los ejercicios y progreso de los estudiantes en coordinación
-            por medio de los dispositivos.
-          </p>
-        </section>
+      <!-- Nueva Sección: Moviéndonos con Tecnología -->
+      <div class="max-w-5xl mx-auto mt-12 px-4 py-8 bg-white rounded-lg shadow-lg text-center">
+        <h2 class="text-3xl font-semibold text-blue-800 mb-4">Moviéndonos con Tecnología</h2>
+        <p class="text-gray-700 text-lg mb-4">
+          A través de la plataforma Just Dance Now, podrás bailar al ritmo de las canciones usando tu dispositivo y así realizar actividad física.
+        </p>
+        <a
+          href="https://www.justdancenow.com/"
+          target="_blank"
+          class="inline-block bg-green-600 text-white text-lg font-semibold px-6 py-3 rounded-lg transition duration-300 hover:bg-green-700"
+        >
+          ¡Haz clic aquí para empezar a bailar!
+        </a>
       </div>
     </div>
   </template>
@@ -59,6 +65,68 @@
   <script>
   export default {
     name: "HomePage",
+    data() {
+      return {
+        videos: [
+          { url: "/video/ctr.mp4", title: "Deporte + Tecnologia", description: "Usando el reloj Inteligente cuando hacen ejercicio", isLocal: true },
+          { url: "https://www.youtube.com/embed/qELDncaLfjo", title: "La importancia de la actividad fisica", description: "Que importante es la actividad fisica en los niños", isLocal: false },
+          { url: "https://www.youtube.com/embed/21IHkgaiv-w", title: "Beneficios del ejercicio", description: "Siempre hay Beneficios en cada ejercicio que realizamos desde edad temprana", isLocal: false },
+        ]
+      };
+    },
   };
   </script>
+  
+  <style scoped>
+  /* Animaciones */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in-slow {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-out;
+  }
+  
+  .animate-fade-in-slow {
+    animation: fade-in-slow 1.5s ease-out;
+  }
+  
+  /* Fondo y Contenido */
+  .bg-gradient-to-b {
+    background: linear-gradient(to bottom, #fff7ae, #b2e3d6);
+  }
+  
+  .h-96 {
+    height: 24rem; /* Altura ajustada */
+  }
+  
+  /* Tarjetas de Video */
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Botón de enlace con transición */
+  a {
+    transition: background-color 0.3s ease;
+  }
+  </style>
   
