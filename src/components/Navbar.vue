@@ -16,7 +16,7 @@
       <!-- Menú de navegación -->
       <div
         :class="isMenuOpen ? 'translate-x-0' : '-translate-x-full'"
-        class="fixed top-0 left-0 h-full w-3/4 bg-gradient-to-b from-blue-500 to-blue-transparent p-6 space-y-4 transform transition-transform duration-300 md:relative md:translate-x-0 md:flex md:space-y-0 md:space-x-4 md:bg-transparent md:w-auto md:p-0"
+        class="fixed top-0 left-0 h-full w-3/4 bg-gradient-to-b from-blue-500 to-blue-600 p-6 space-y-4 transform transition-transform duration-300 md:relative md:translate-x-0 md:flex md:space-y-0 md:space-x-4 md:bg-transparent md:w-auto md:p-0"
       >
         <router-link @click="closeMenu" class="nav-link" to="/">Inicio</router-link>
         <router-link @click="closeMenu" class="nav-link" to="/alcance">Alcance</router-link>
@@ -51,13 +51,13 @@
   /* Clase común para los enlaces del menú */
   .nav-link {
     @apply block md:inline-block text-lg font-semibold px-2 py-1 rounded;
-    background: transparent; /* Fondo degradado azul */
+    background: linear-gradient(to right, #3b82f6, #2563eb); /* Fondo degradado azul */
     transition: background-color 0.3s ease;
   }
   
   /* Eliminar cambio de color en hover para mantener la consistencia visual */
   .nav-link:hover {
-    background: transparent; /* Mantener el mismo fondo */
+    background: linear-gradient(to right, #3b82f6, #2563eb); /* Mantener el mismo fondo */
   }
   </style>
   
