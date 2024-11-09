@@ -86,8 +86,8 @@
             isLocal: false,
           },
           {
-            url: "https://www.youtube.com/embed/21IHkgaiv-w",
-            title: "Beneficios del ejercicio",
+            url: "https://www.youtube.com/embed/_N-Ij9wqUZg",
+            title: "La importancia de realizar actividad física en niños y niñas",
             description: "Siempre hay beneficios en cada ejercicio que realizamos desde edad temprana",
             isLocal: false,
           },
