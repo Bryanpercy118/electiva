@@ -20,7 +20,7 @@
       <div class="relative max-w-5xl mx-auto py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Card 1 -->
         <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
-          <iframe src="https://www.youtube.com/embed/video1" class="w-full h-48 md:h-56" frameborder="0" 
+          <iframe src="https://www.youtube.com/embed/ZDxGSoKSNkM" class="w-full h-48 md:h-56" frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="p-4">
             <h3 class="text-xl font-semibold text-blue-600">Coordinación y Movimiento</h3>
@@ -32,7 +32,7 @@
   
         <!-- Card 2 -->
         <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
-          <iframe src="https://www.youtube.com/embed/video2" class="w-full h-48 md:h-56" frameborder="0" 
+          <iframe src="https://www.youtube.com/embed/4fUzhA_Mxaw" class="w-full h-48 md:h-56" frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="p-4">
             <h3 class="text-xl font-semibold text-green-600">Movimientos Musculares</h3>
@@ -44,7 +44,7 @@
   
         <!-- Card 3 -->
         <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
-          <iframe src="https://www.youtube.com/embed/video3" class="w-full h-48 md:h-56" frameborder="0" 
+          <iframe src="https://www.youtube.com/embed/77Gs6raEPp4" class="w-full h-48 md:h-56" frameborder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="p-4">
             <h3 class="text-xl font-semibold text-purple-600">Rutinas Divertidas</h3>
