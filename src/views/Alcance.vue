@@ -15,7 +15,7 @@
             <h2 class="text-2xl font-semibold text-blue-600">Desarrollar una plataforma digital interactiva</h2>
           </div>
           <p class="text-gray-600 text-lg text-justify">
-            Crear una plataforma que permita a los niños interactuar y aprender sobre hábitos de vida saludable de manera lúdica y educativa.
+            Crear una plataforma dirigida a niños entre 5 y 12 años de instituciones del país, que les permita interactuar y aprender sobre hábitos de vida saludable de manera lúdica y educativa.
           </p>
         </div>
   
@@ -26,7 +26,7 @@
             <h2 class="text-2xl font-semibold text-green-600">Fomentar la actividad física en niños</h2>
           </div>
           <p class="text-gray-600 text-lg text-justify">
-            Integrar tecnologías y herramientas que motiven a los niños a moverse, mejorar su coordinación y adoptar hábitos activos y saludables desde pequeños.
+            Integrar tecnologías y herramientas que motiven a los niños a moverse, mejorar su coordinación y adoptar hábitos activos y saludables desde una edad temprana.
           </p>
         </div>
       </div>
