@@ -20,7 +20,7 @@
       <div class="flex justify-center">
         <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs transform transition duration-300 hover:scale-105">
           <!-- Imagen -->
-          <img src="https://images.pexels.com/photos/8613368/pexels-photo-8613368.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+          <img src="/images/reloj.jpg" 
                alt="Reloj inteligente" class="w-full h-56 object-cover">
           <!-- Descripción de la tarjeta -->
           <div class="p-4 text-center">
