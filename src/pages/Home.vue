@@ -18,6 +18,16 @@
       </div>
     </div>
 
+    <div class="max-w-5xl mx-auto mt-8 md:mt-12 px-4 py-6 md:py-8 bg-white rounded-lg shadow-lg text-center">
+      
+      <p class="text-gray-700 text-base md:text-lg mb-4 text-justify">
+        Hoy más que nunca, necesitamos que nuestros niños se mantengan en movimiento, especialmente en un mundo donde las pantallas capturan cada vez más su atención. Les presentamos una plataforma innovadora que integra tecnología y ejercicio para ofrecer una alternativa educativa y divertida. Con juegos de coordinación, videos interactivos y dispositivos como relojes inteligentes, 
+        esta propuesta está diseñada para motivar a niños de 5 a 12 años a adoptar un estilo de vida.
+      </p>
+
+    </div>
+
+
     <!-- Sección de Videos Interactivos -->
     <div class="max-w-5xl mx-auto mt-8 px-4">
       <h2 class="text-2xl md:text-3xl font-semibold text-blue-800 text-center mb-6 md:mb-8">Videos de Apoyo</h2>
@@ -95,9 +105,9 @@ export default {
           isLocal: false,
         },
         {
-          url: "https://www.youtube.com/embed/_N-Ij9wqUZg",
-          title: "La importancia de realizar actividad física en niños y niñas",
-          description: "Siempre hay beneficios en cada ejercicio que realizamos desde edad temprana",
+          url: "https://www.youtube.com/embed/ltq2UhyDrEQ",
+          title: "Ventajas de usar un reloj inteligente",
+          description: "Siempre hay beneficios en cada ejercicio que realizamos desde edad temprana, mucho mas si utilizamos la tecnologia inteligentemente",
           isLocal: false,
         },
       ],
