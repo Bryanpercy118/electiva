@@ -1,7 +1,15 @@
 <template>
     <div class="min-h-screen bg-gradient-to-b from-yellow-100 to-blue-100 p-8">
-      <!-- Título de la sección -->
-      <h1 class="text-4xl font-bold text-blue-600 text-center mb-6">Curricular 📚</h1>
+      <!-- Imagen de fondo en la parte superior -->
+      <div class="relative w-full h-64 md:h-80 bg-cover bg-center mb-8" 
+           style="background-image: url('/images/curriculum.jpg');">
+        <!-- Superposición de color oscuro translúcido -->
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-white">Curricular 📚</h1>
+        </div>
+      </div>
+  
+      <!-- Descripción de la sección -->
       <p class="text-lg text-gray-800 text-center max-w-3xl mx-auto mb-10">
         Incorporación de la tecnología en el currículo de educación física, creando una unidad adicional que contiene objetivos relacionados con la actividad física, el uso de tecnología significativa y el progreso en coordinación.
       </p>
@@ -49,11 +57,13 @@
   .bg-gradient-to-b {
     background: linear-gradient(to bottom, #fef3c7, #a7f3d0);
   }
-  .text-center {
-    text-align: center;
+  
+  /* Estilos para la imagen de fondo en la parte superior */
+  .bg-cover {
+    background-size: cover;
   }
-  .text-justify {
-    text-align: justify;
+  .bg-center {
+    background-position: center;
   }
   </style>
   
