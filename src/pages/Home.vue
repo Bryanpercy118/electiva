@@ -1,3 +1,5 @@
+
+
 <template>
   <div class="bg-gradient-to-b from-yellow-100 to-green-200 min-h-screen">
     <!-- Sección con Imagen de Fondo y Título Principal -->
@@ -31,7 +33,7 @@
     <!-- Sección de Videos Interactivos -->
     <div class="max-w-5xl mx-auto mt-8 px-4">
       <h2 class="text-2xl md:text-3xl font-semibold text-blue-800 text-center mb-6 md:mb-8">Videos de Apoyo</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Tarjetas de Video -->
         <div
           v-for="(video, index) in videos"
@@ -108,6 +110,12 @@ export default {
           url: "https://www.youtube.com/embed/ltq2UhyDrEQ",
           title: "Ventajas de usar un reloj inteligente",
           description: "Siempre hay beneficios en cada ejercicio que realizamos desde edad temprana, mucho mas si utilizamos la tecnologia inteligentemente",
+          isLocal: false,
+        },
+        {
+          url: "https://www.youtube.com/embed/_N-Ij9wqUZg",
+          title: "La importancia de realizar actividad física en niños y niñas",
+          description: "Siempre hay beneficios en cada ejercicio que realizamos desde edad temprana",
           isLocal: false,
         },
       ],
